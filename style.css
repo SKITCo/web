@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+:root{
+    --primary:    #e7e5e4;
+    --dark: #2f3136;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1)
+}
+
+body{
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "sans-sarif";
+    line-height: 1.7;
+    color: var(--body);
+}
+h1,h2,h3,h4,h5,h6,
+.display-4{
+    color: var(#FF6707);
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.navbar, .navbar-dark, .navbar-brand{
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    color: #FF6707 !important;
+}
+.navbar-brand a{
+    color: #FF6707;
+}
+.section-all{
+    background-image: url(./img/web-design-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+.section-all::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 52, 53, 0.603);
+    z-index: -1;
+}
+
+.nav-item .nav-link{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.btn{
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 2px;
+    background-color: #FF6707;
+    border-color: #FF6707;
+}
+.btn:hover{
+    color: #fafafa;
+    background-color: #e64dab;
+    border-color: #e64dab;
+}
+.btn-outline-light:hover{
+    background-color: transparent;
+    color: #fff;
+}
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.our-services{
+    color: #FF6707;
+}
+.sets{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+    border-radius: 10px;
+}
+.sets:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.sets-icons{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6707;
+    color: #fff;
+    font-size: 50px;
+    border-radius: 50%;
+}
+.sets{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.sets::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: #FF6707;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.sets:hover .sets-icons{
+     background-color: #fff;
+     color: #FF6707;
+}
+.sets:hover h5,
+.sets:hover p{
+    color: #fff;
+}
+.sets:hover::after{
+    opacity: 1;
+    top: 0;
+}
+.imgcol{
+    background-image: url(./img/team.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 80%;
+}
+.feature-icons{
+    flex: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6707;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 50%;
+}
+#features{
+    background-color: rgba(213, 216, 218, 0.836);
+
+}
+.best-sol{
+    color: #FF6707;
+}
+.project{
+    position: relative;
+    overflow: hidden;
+}
+.project .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 52, 53, 0.705);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.project img{
+    transition: all 0.4s ease;
+}
+.project:hover .overlay{
+    opacity: 1;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.live-project a{
+    color: #fff;
+    text-decoration: none;
+}
+.portfolio{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.our-works{
+    color: #FF6707;
+    margin-bottom: 30px;
+}
+.overlay{
+    justify-content: center;
+}
+.pricing-section{
+    margin: 0px 0 50px;
+}
+.pricing{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+    border-radius: 10px;
+}
+.pricing:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.pricing i{
+    font-size: 20px;
+    color: #FF6707;
+    margin-right: 10px;
+}
+.pricing ul li{
+    margin-top: 8px;
+}
+.pricing button{
+    border-radius: 5px;
+    background-color: #FF6707;
+    border-color: #FF6707;
+}
+.pricing button:hover{
+    background-color: #e64dab;
+    border-color: #e64dab;
+}
+.team-members{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.4s ease;
+}
+.team-members:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.team-members img{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+}
+.social-networks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-networks i{
+    font-size: 17px;
+    width: 30px;
+    height: 30px;
+    background-color: #FF6707;
+    color: #fff;
+    border: 2px solid #FF6707;
+    border-radius: 50%;
+    margin-left: 5px;
+    padding-top: 4px;
+    transition: all 0.4s ease;
+}
+.social-networks i:hover{
+    color: #e64dab;
+    background-color: transparent;
+    border-color: #e64dab;
+}
+.details{
+    display: inline-flex;
+}
+.details1{
+    display: flex;
+    float: left;
+}
+.card{
+    background-color: rgb(253, 255, 255);
+    margin: 10px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+.card-body i{
+    font-size: 30px;
+    color: #FF6707;
+}
+.ctabtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ctabtn button{
+    padding: 10px 100px 10px 100px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+#exampleFormControlTextarea1{
+    height: 200px;
+}
+.footer-top{
+    padding: 60px 0px 60px 0px;
+    background-color: rgb(28, 28, 29);
+}
+.footer-logo{
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    color: #FF6707;
+}
+footer ul li a{
+    text-decoration: none;
+    color: grey;
+}
+footer ul li a:hover{
+    color: #fff;
+}
